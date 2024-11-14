@@ -1,17 +1,17 @@
-<!DOCTYPE html>
-<<html lang="en">>>
-<headhead>
- <meta metameta charsetcharset=="UTF-8">
- <titletitle>>博客首页博客首页</</titletitle>
-</headhead>
-<<<body>>>
-<div divdiv stylestyle=="margin: : 0 auto""margin: : 0 auto">
- <<<ulul>>
- <h3h3>>最新文章最新文章</</h3h3>
- {% for x in blog_index %} {% for x in blog_index %}
- <lili>>{{ x.title }}{{ x.title }}</</lili>
- {% endfor %} {% endfor %}
- </ulul>
-</divdiv>
-</</</</</bodybody>>>>>
-</htmlhtml>
+<!DOCTYPE html><!DOCTYPE html><!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <title>博客首页</title>
+</head>
+<body>
+<div style="margin: 0 auto">
+ <ul>
+ <h3>最新文章</h3>
+ {% for x in blog_index %}
+ <li>{{ x.title }}</li>
+ {% endfor %}
+ </ul>
+</div>
+</body>
+</html>
